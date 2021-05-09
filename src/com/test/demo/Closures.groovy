@@ -18,6 +18,7 @@ println myClosure2(10,20,30)
 
 def myList1 = ["Apples", "Oranges", "Grapes"]
 println myList1.each { it }
+myList1.forEach({fruit -> println fruit})
 
 def myMap = [
 	'subject':'groovy',
@@ -33,3 +34,11 @@ println myList.any { item -> item > 3 }   // True, wenn eines > 3
 println myList.every { item -> item > 3 } // True, wenn ALLE > 3
 println myList.collect { item -> item*2  }
 
+//File file = new File($/C:\dev\prj\groovy-course\FirstGroovyProject\src\com\test\demo\Method2.groovy/$)
+//def line, noOfLines = 0;
+//file.withReader { reader ->
+//	while ((line = reader.readLine()) != null) {
+//		println "${line}"
+//		noOfLines++
+//	}
+//}
